@@ -1,11 +1,7 @@
-import { ChatBot } from '@/components/ChatBot';
+import { ChatInterface } from '@/components/ChatInterface';
 
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-background">
-      <ChatBot />
-    </div>
-  );
+  return <ChatInterface />;
 };
 
 export default Index;
