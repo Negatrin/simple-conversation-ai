@@ -47,6 +47,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        chat: {
+          background: "hsl(var(--chat-background))",
+          "user-bubble": "hsl(var(--chat-user-bubble))",
+          "user-text": "hsl(var(--chat-user-text))",
+          "bot-bubble": "hsl(var(--chat-bot-bubble))",
+          "bot-text": "hsl(var(--chat-bot-text))",
+          "input-background": "hsl(var(--chat-input-background))",
+          shadow: "hsl(var(--chat-shadow))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +71,16 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        "2xl": "1rem",
+        "3xl": "1.5rem",
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-background": "var(--gradient-background)",
+      },
+      transitionTimingFunction: {
+        smooth: "var(--transition-smooth)",
+        bounce: "var(--transition-bounce)",
       },
       keyframes: {
         "accordion-down": {
