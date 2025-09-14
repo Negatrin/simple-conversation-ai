@@ -229,6 +229,17 @@ export const ChatInterface: React.FC = () => {
     setInputValue(`Tell me about ${title.toLowerCase()}`);
   };
 
+  const handleNewChat = () => {
+    setMessages([{
+      id: '1',
+      text: 'Hello! 👋 I\'m your AI assistant. How can I help you today?',
+      isUser: false,
+      timestamp: new Date(),
+    }]);
+    setActiveChat('new-chat');
+    setInputValue('');
+  };
+
   return (
     <div className="flex h-screen bg-chat-background text-foreground">
       {/* Sidebar */}
@@ -255,7 +266,7 @@ export const ChatInterface: React.FC = () => {
           
           <Button 
             className="w-full bg-white text-black hover:bg-gray-100 rounded-xl font-medium"
-            onClick={() => setActiveChat('new-chat')}
+            onClick={handleNewChat}
           >
             <Plus className="w-4 h-4 mr-2" />
             New Chat
